@@ -1,49 +1,136 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>DuDu's profile</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <meta name="description" content="this is the page about cat DuDu">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xing Liu | Full Stack Developer</title>
+
+  <script>
+    const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-text">Xing Liu</span>
+        <div class="logo-dot"></div>
+      </a>
+
+      <div class="nav-actions">
+        <div class="nav-links">
+          <a href="#projects" data-i18n="nav.projects">Projects</a>
+          <a href="#experience" data-i18n="nav.experience">Experience</a>
+          <a href="#education" data-i18n="nav.education">Education</a>
+          <a href="#skills" data-i18n="nav.skills">Stack</a>
+        </div>
+
+        <div class="nav-controls">
+          <!-- <button class="control-btn lang-toggle" aria-label="Toggle Language">中文</button> -->
+          <button class="control-btn theme-toggle" aria-label="Toggle Theme">
+            <i class="fas fa-sun sun-icon"></i>
+            <i class="fas fa-moon moon-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="intro" class="intro">
+    <div class="bg-decoration"></div>
+    <div class="container flex-center column">
+      <div class="avatar-container">
+        <img src="assets/images/Avatar.PNG" alt="Xing Liu's Avatar" class="avatar" data-i18n="intro.avatarAlt">
+        <div class="avatar-glow"></div>
+      </div>
+      <h1 class="gradient-text" data-i18n="intro.title">Hello, I'm Xing</h1>
+      <p class="subtitle" data-i18n="intro.desc">A solution-oriented junior full-stack developer...</p>
+      <div class="intro-contact-links" aria-label="Social Links">
+          <a href="https://github.com/starrr826" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/starrr826" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:starrr826@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section-padding">
+      <div class="container">
+        <h2 data-i18n="projects.title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3 data-i18n="projects.item1.title"></h3>
+            <p data-i18n="projects.item1.desc"></p>
+          </div>
+          <div class="project-card">
+            <h3 data-i18n="projects.item2.title"></h3>
+            <p data-i18n="projects.item2.desc"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section id="experience" class="section-padding">
     <div class="container">
-      <div class = "card-green">
-        <h1>Meow, I'm DuDu</h1>
-        <img src="images/DuDu.jpeg" width="200px" alt="DuDu Liu" class="img-circle">
+      <h2 data-i18n="experience.title">Work Experience</h2>
+      <div class="experience-grid">
+        <div class="experience-card">
+          <h3 data-i18n="experience.item1.title">Ostays | Human Resources Manager</h3>
+          <span class="date" data-i18n="experience.item1.date"></span>
+          <p data-i18n="experience.item1.desc"></p>
+        </div>
+        <div class="experience-card">
+          <h3 data-i18n="experience.item2.title">Pfizer (via dMed) | Drug Safety Associate</h3>
+          <span class="date" data-i18n="experience.item2.date"></span>
+          <p data-i18n="experience.item2.desc"></p>
+        </div>
       </div>
-      <div class = "card-green">
-        <h2>
-          Professional cat
-        </h2>
-        <p>
-          I’m a 4-year-old British Shorthair, a professional sleeper and food taster.
-          I’m also very good at socializing with humans. Nice to meet you!
-        </p>
-        <a href="#" class = "btn-orange">Discover more about me</a>
+    </div>
+  </section>
+
+  <section id="education" class="section-padding">
+    <div class="container">
+      <h2 data-i18n="education.title">Education</h2>
+      <div class="education-container">
+        <div class="education-item">
+          <span class="date" data-i18n="education.event1.date"></span>
+          <h3 data-i18n="education.event1.title">Le Wagon Tokyo - AI Software</h3>
+          <p data-i18n="education.event1.desc"></p>
+        </div>
+        <div class="education-item">
+          <span class="date" data-i18n="education.event2.date"></span>
+          <h3 data-i18n="education.event2.title">Ritsumeikan University - MBA</h3>
+          <p data-i18n="education.event2.desc"></p>
+        </div>
+        <div class="education-item">
+          <span class="date" data-i18n="education.event3.date"></span>
+          <h3 data-i18n="education.event3.title">Dalian Polytechnic University</h3>
+          <p data-i18n="education.event3.desc"></p>
+        </div>
       </div>
-      <div class = "card-green">
-        <h2>Follow me</h2>
-        <ul class="list-inline">
-          <li>
-            <a href="#">
-              <i class="fa-solid fa-cat"></i>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa-solid fa-fish"></i>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa-solid fa-house"></i>
-          </li>
+    </div>
+  </section>
+
+  <section id="skills" class="section-padding">
+    <div class="container">
+      <h2 data-i18n="skills.title">Tech Stack</h2>
+      <div class="skills-wrapper">
+        <ul>
+          <li data-i18n="skills.backend"></li>
+          <li data-i18n="skills.frontend"></li>
+          <li data-i18n="skills.tools"></li>
+          <li data-i18n="skills.languages"></li>
         </ul>
       </div>
     </div>
-  </body>
+  </section>
+
+  <footer data-i18n="footer.copyright">© 2026 Xing Liu. All rights reserved.</footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
 </html>

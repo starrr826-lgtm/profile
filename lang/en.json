@@ -1,0 +1,97 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "contact": "Contact",
+    "documents": "Resume"
+  },
+  "intro": {
+    "avatarAlt": "Xing Liu's Avatar",
+    "title": "Hi, I'm Xing Liu",
+    "desc": "Junior Full-stack Developer and Le Wagon graduate, based in Tokyo"
+  },
+  "projects": {
+    "title": "Projects",
+    "imgAlt": "Project Image",
+    "viewDetail": "Open To Try",
+    "item1": {
+      "title": "Where's My Tofu | Backend Developer",
+      "desc": "A web application that allows users to compare grocery prices across nearby stores and generates optimized shopping routes.",
+      "tags": ["Ruby on Rails", "JavaScript", "PostgreSQL", "Mapbox"]
+    },
+    "item2": {
+      "title": "MaiKusuri | Backend Developer",
+      "desc": "An AI OTC Medicine Assistant designed specifically for foreign residents in Japan to navigate local pharmacies.",
+      "tags": ["Ruby on Rails", "JavaScript", "Rakuten API", "OpenAI API"]
+    }
+  },
+  "project1": {
+    "title": "Where's My Tofu",
+    "desc": "Developed a web application from scratch to help users compare grocery prices across nearby stores and generate optimized shopping routes.<br><br>Role: Backend Developer<br>Tech Stack: Ruby on Rails, JavaScript, Turbo, SCSS, HTML, PostgreSQL, Github, Heroku, Mapbox.",
+    "links": {
+      "github": "GitHub Repo",
+      "techDoc": "Tech Details",
+      "demo": "Live Demo"
+    }
+  },
+  "project2": {
+    "title": "MaiKusuri",
+    "desc": "Built an AI-powered OTC Medicine Assistant for foreign residents in Japan.<br><br>Role: Backend Developer<br>Tech Stack: Ruby on Rails, JavaScript, Turbo, SCSS, HTML, PostgreSQL, Github, Heroku, Mapbox, Rakuten API.",
+    "links": {
+      "github": "GitHub Repo",
+      "techDoc": "Tech Details",
+      "demo": "Live Demo"
+    }
+  },
+  "experience": {
+    "title": "Work Experience",
+    "item1": {
+      "title": "Ostays | Human Resources Manager",
+      "date": "01/2022 - 08/2022",
+      "desc": "Managed the full remote hiring process for hotel cleaning teams in different regions across Japan. Resolved daily operational issues and tracked team performance to maintain high standards."
+    },
+    "item2": {
+      "title": "Pfizer (via dMed) | Drug Safety Associate",
+      "date": "05/2021 - 11/2021",
+      "desc": "Processed a large volume of COVID-19 vaccine safety reports during busy periods, ensuring data accuracy. Guided new team members to learn the system and handle reports independently."
+    }
+  },
+  "education": {
+    "title": "Education",
+    "event1": {
+      "date": "09/2025 - 03/2026",
+      "title": "Le Wagon Tokyo - AI Software",
+      "desc": "Developed two web apps from scratch using Ruby on Rails, JavaScript, HTML/SCSS, and OpenAI API."
+    },
+    "event2": {
+      "date": "03/2019 - 03/2021",
+      "title": "Ritsumeikan University - MBA",
+      "desc": "Master of Business Administration. Osaka, Japan."
+    },
+    "event3": {
+      "date": "09/2014 - 06/2018",
+      "title": "Dalian Polytechnic University",
+      "desc": "Bachelor of Arts in Business Japanese. Dalian, China."
+    }
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "backend": "Ruby, Ruby on Rails, PostgreSQL",
+    "frontend": "JavaScript, HTML5, CSS/SCSS, Turbo",
+    "tools": "Git/Github, Heroku",
+    "languages": "English (Proficient), Japanese (Fluent, JLPT N1), Chinese (Native)"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "linkedin": "LinkedIn - Xing Liu",
+    "github": "Github - Xing Liu",
+    "email": "starrr826@gmail.com",
+    "phone": "080-9994-5479"
+  },
+  "footer": {
+    "copyright": "© 2026 Xing Liu | Full Stack Developer"
+  }
+}

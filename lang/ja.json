@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "projects": "プロジェクト",
+    "experience": "職歴",
+    "education": "学歴",
+    "skills": "スキル"
+  },
+  "intro": {
+    "avatarAlt": "Xingのプロフィール画像",
+    "title": "初めまして、Xingです",
+    "desc": "東京在住のジュニアフルスタック開発者、Le Wagon卒業生"
+  },
+  "projects": {
+    "title": "プロジェクト",
+    "item1": {
+      "title": "Where's My Tofu | バックエンドエンジニア",
+      "desc": "近隣スーパーの食料品価格を比較し、最適な買い物ルートを生成するWebアプリケーション。<br><b>技術スタック:</b> Ruby on Rails, JavaScript, Turbo, SCSS, HTML, PostgreSQL, Mapbox"
+    },
+    "item2": {
+      "title": "MaiKusuri | バックエンドエンジニア",
+      "desc": "在日外国人向けのAI搭載 市販薬（OTC）アシスタント。<br><b>技術スタック:</b> Ruby on Rails, JavaScript, Turbo, SCSS, HTML, PostgreSQL, Rakuten API"
+    }
+  },
+  "experience": {
+    "title": "職歴",
+    "item1": {
+      "title": "Ostays | 人事マネージャー (HR Manager)",
+      "date": "2022年01月 - 2022年08月",
+      "desc": "日本各地のホテル清掃チームの完全リモート採用プロセスを管理。日常的な業務課題を解決し、チームのパフォーマンスを追跡して高い品質基準を維持しました。"
+    },
+    "item2": {
+      "title": "ファイザー (via dMed) | 医薬品安全性担当",
+      "date": "2021年05月 - 2021年11月",
+      "desc": "繁忙期において、データの正確性に注力しつつ、大量の新型コロナウイルスワクチン安全性報告を処理。また、新メンバーがシステムを習得し、自立して報告業務を行えるよう指導・サポートを行いました。"
+    }
+  },
+  "education": {
+    "title": "学歴",
+    "event1": {
+      "date": "2025年09月 - 2026年03月",
+      "title": "Le Wagon Tokyo - AI Software",
+      "desc": "Ruby on Rails、JavaScript、HTML/SCSS、OpenAI APIを使用し、ゼロから2つのWebアプリケーションを開発。"
+    },
+    "event2": {
+      "date": "2019年03月 - 2021年03月",
+      "title": "立命館大学大学院 - 経営管理研究科 (MBA)",
+      "desc": "経営学修士。大阪。"
+    },
+    "event3": {
+      "date": "2014年09月 - 2018年06月",
+      "title": "大連工業大学",
+      "desc": "文学学士（ビジネス日本語専攻）。中国・大連。"
+    }
+  },
+  "skills": {
+    "title": "技術スタック",
+    "backend": "<b>バックエンド:</b> Ruby, Ruby on Rails, PostgreSQL",
+    "frontend": "<b>フロントエンド:</b> JavaScript, HTML5, CSS/SCSS, Turbo",
+    "tools": "<b>ツール:</b> Git/Github, Heroku",
+    "languages": "<b>語学:</b> 英語 (ビジネスレベル), 日本語 (流暢・JLPT N1), 中国語 (ネイティブ)"
+  },
+  "footer": {
+    "copyright": "© 2026 Xing Liu. All rights reserved."
+  }
+}
