@@ -311,10 +311,9 @@
 
   function initRevealMotion() {
     const targets = [
-      ...qsa('.project-detail-card'),
       ...qsa('.projects-grid .card'),
-      ...qsa('.opensource-grid .os-card'),
-      ...qsa('.timeline-container .timeline-item'),
+      ...qsa('.experience-grid .experience-card'),
+      ...qsa('.education-container .education-item'),
       ...qsa('.skills-wrapper .skill-category'),
     ];
 
@@ -357,8 +356,6 @@
   window.addEventListener('i18nLoaded', () => {
     console.log('[main] i18n loaded, rendering content...');
     initProjects();
-    initOpenSource();
-    initTimeline();
     initTechStack();
     initContactLinks();
     initRevealMotion();
