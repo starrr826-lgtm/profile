@@ -16,7 +16,7 @@
   "projects": {
     "title": "Projects",
     "imgAlt": "Project Image",
-    "viewDetail": "Open To Try",
+    "viewDetail": "View Project",
     "item1": {
       "title": "Where's My Tofu | Backend Developer",
       "desc": "A web application that allows users to compare grocery prices across nearby stores and generates optimized shopping routes.",

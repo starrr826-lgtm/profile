@@ -1,33 +1,31 @@
 (() => {
   const PROJECT_TAG_LIBRARY = {
-    ROBOTICS: 'Robotics',
-    EMBEDDED: 'Embedded Systems',
-    REINFORCEMENT_LEARNING: 'Reinforcement Learning',
-    SIM2REAL: 'Sim2Real',
-    DEPLOYMENT: 'Deployment',
-    FREERTOS: 'FreeRTOS',
-    MOTION_CONTROL: 'Motion Control',
-    MOTOR_CONTROL: 'Motor Control',
-    SLAM: 'SLAM',
-    LIDAR: 'LiDAR',
-    MECHANICAL_DESIGN: 'Mechanical Design',
-    UNDERWATER_ROBOTICS: 'Underwater Robotics',
-    VECTOR_PROPULSION: 'Vector Propulsion',
-    WATERPROOF_ENGINEERING: 'Waterproof Engineering',
-    AGRICULTURAL_ROBOTICS: 'Agricultural Robotics',
-    MULTI_ROBOT_COLLABORATION: 'Multi-Robot Collaboration',
-  };
-
+    RUBY_ON_RAILS: 'Ruby on Rails',
+    HTML: 'HTML',
+    CSS: 'CSS',
+    JAVASCRIPT: 'Javascript',
+    TURBO: 'Turbo(Hotwire)',
+    OPENAI: 'OpenAI/ChatGPT',
+    DATA: 'PostgreSQL',
+    MAPBOX: 'Mapbox',
+    STIMULUS: 'Stimulus JS',
+    API: 'Rakuten API'
+    };
   const PROJECTS = [
     {
       img: 'assets/images/wht.png',
       titleKey: 'projects.item1.title',
       descKey: 'projects.item1.desc',
       tags: [
-        PROJECT_TAG_LIBRARY.ROBOTICS,
-        PROJECT_TAG_LIBRARY.REINFORCEMENT_LEARNING,
-        PROJECT_TAG_LIBRARY.SIM2REAL,
-        PROJECT_TAG_LIBRARY.DEPLOYMENT,
+        PROJECT_TAG_LIBRARY.RUBY_ON_RAILS,
+        PROJECT_TAG_LIBRARY.HTML,
+        PROJECT_TAG_LIBRARY.CSS,
+        PROJECT_TAG_LIBRARY.JAVASCRIPT,
+        PROJECT_TAG_LIBRARY.STIMULUS,
+        PROJECT_TAG_LIBRARY.MAPBOX,
+        PROJECT_TAG_LIBRARY.API,
+        PROJECT_TAG_LIBRARY.DATA,
+        PROJECT_TAG_LIBRARY.OPENAI,
       ],
       link: 'https://www.wheresmytofu.me/',
     },
@@ -36,39 +34,54 @@
       titleKey: 'projects.item2.title',
       descKey: 'projects.item2.desc',
       tags: [
-        PROJECT_TAG_LIBRARY.ROBOTICS,
-        PROJECT_TAG_LIBRARY.MOTION_CONTROL,
-        PROJECT_TAG_LIBRARY.SLAM,
-        PROJECT_TAG_LIBRARY.LIDAR,
-        PROJECT_TAG_LIBRARY.MECHANICAL_DESIGN,
+        PROJECT_TAG_LIBRARY.RUBY_ON_RAILS,
+        PROJECT_TAG_LIBRARY.HTML,
+        PROJECT_TAG_LIBRARY.CSS,
+        PROJECT_TAG_LIBRARY.JAVASCRIPT,
+        PROJECT_TAG_LIBRARY.TURBO,
+        PROJECT_TAG_LIBRARY.MAPBOX,
+        PROJECT_TAG_LIBRARY.API,
+        PROJECT_TAG_LIBRARY.DATA,
+        PROJECT_TAG_LIBRARY.OPENAI,
       ],
       link: 'https://mai-kusuri-6f1cdb2a3fdb.herokuapp.com/',
     },
-
   ];
 
-  const OPEN_SOURCE_ITEMS = [
-    { key: 'opensource.item9', linkCode: 'https://github.com/Lain-Ego0/LocoWiki', linkDoc: null },
-    { key: 'opensource.item1', linkCode: 'https://github.com/Lain-Ego0/BRS-Parallel-Robot', linkDoc: null },
-    { key: 'opensource.item2', linkCode: 'https://github.com/Lain-Ego0/SliverWolf-ArmRobotDog', linkDoc: null },
-    { key: 'opensource.item3', linkCode: null, linkDoc: 'https://wcn9j5638vrr.feishu.cn/wiki/space/7570988375279517715' },
-    { key: 'opensource.item4', linkCode: 'https://github.com/Lain-Ego0/ROBOCON2024-R1', linkDoc: null },
-    { key: 'opensource.item5', linkCode: 'https://github.com/Lain-Ego0/ROBOCON2024-3508DOG', linkDoc: null },
-    { key: 'opensource.item6', linkCode: 'https://github.com/Lain-Ego0/HTDW4438_HIMloco', linkDoc: null },
-    { key: 'opensource.item7', linkCode: 'https://github.com/Lain-Ego0/HTDW4438-OpenDog', linkDoc: null },
-    { key: 'opensource.item8', linkCode: 'https://github.com/Lain-Ego0/ROBOCON2024-PPS', linkDoc: null },
+  const EXPERIENCE_DATA = [
+    {
+      titleKey: 'experience.item1.title',
+      dateKey: 'experience.item1.date',
+      descKey: 'experience.item1.desc',
+      fallbackTitle: 'Ostays | Human Resources Manager'
+    },
+    {
+      titleKey: 'experience.item2.title',
+      dateKey: 'experience.item2.date',
+      descKey: 'experience.item2.desc',
+      fallbackTitle: 'Pfizer (via dMed) | Drug Safety Associate'
+    }
   ];
 
-  const TIMELINE_EVENTS = [
-    'timeline.event9',
-    'timeline.event8',
-    'timeline.event7',
-    'timeline.event6',
-    'timeline.event5',
-    'timeline.event4',
-    'timeline.event3',
-    'timeline.event2',
-    'timeline.event1',
+  const EDUCATION_DATA = [
+    {
+      dateKey: 'education.event1.date',
+      titleKey: 'education.event1.title',
+      descKey: 'education.event1.desc',
+      fallbackTitle: 'Le Wagon Tokyo - AI Software'
+    },
+    {
+      dateKey: 'education.event2.date',
+      titleKey: 'education.event2.title',
+      descKey: 'education.event2.desc',
+      fallbackTitle: 'Ritsumeikan University - MBA'
+    },
+    {
+      dateKey: 'education.event3.date',
+      titleKey: 'education.event3.title',
+      descKey: 'education.event3.desc',
+      fallbackTitle: 'Dalian Polytechnic University'
+    }
   ];
 
   const TECH_STACK = [
@@ -193,58 +206,6 @@
         </div>
       `;
       grid.appendChild(card);
-    });
-  }
-
-  function initOpenSource() {
-    const grid = qs('.opensource-grid');
-    if (!grid) return;
-    clear(grid);
-
-    OPEN_SOURCE_ITEMS.forEach((item) => {
-      const tags = t(`${item.key}.tags`) || [];
-      const tagsHtml = renderSpanTags(tags, 'os-tag');
-
-      let buttonsHtml = '';
-      if (item.linkCode) {
-        buttonsHtml += `<a href="${item.linkCode}" target="_blank" rel="noopener noreferrer" class="os-btn"><i class="fab fa-github"></i> ${t('opensource.btnCode')}</a>`;
-      }
-      if (item.linkDoc) {
-        buttonsHtml += `<a href="${item.linkDoc}" target="_blank" rel="noopener noreferrer" class="os-btn"><i class="fas fa-book"></i> ${t('opensource.btnDoc')}</a>`;
-      }
-
-      const card = document.createElement('div');
-      card.className = 'os-card';
-      card.innerHTML = `
-        <div class="os-header">
-          <div class="os-title">${t(`${item.key}.title`)}</div>
-          <i class="fas fa-code-branch" style="color:var(--primary); opacity:0.5;"></i>
-        </div>
-        <p class="os-desc">${t(`${item.key}.desc`)}</p>
-        <div class="os-tags">${tagsHtml}</div>
-        <div class="os-actions">${buttonsHtml}</div>
-      `;
-      grid.appendChild(card);
-    });
-  }
-
-  function initTimeline() {
-    const container = qs('.timeline-container');
-    if (!container) return;
-    clear(container);
-
-    TIMELINE_EVENTS.forEach((key) => {
-      const item = document.createElement('div');
-      item.className = 'timeline-item';
-      item.innerHTML = `
-        <div class="timeline-dot"></div>
-        <span class="timeline-date">${t(`${key}.date`)}</span>
-        <div class="timeline-content">
-          <h3>${t(`${key}.title`)}</h3>
-          <p>${t(`${key}.desc`)}</p>
-        </div>
-      `;
-      container.appendChild(item);
     });
   }
 
